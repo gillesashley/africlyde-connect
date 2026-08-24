@@ -1,0 +1,13 @@
+node_modules
+.output
+.nitro
+.wrangler
+.vinxi
+.tanstack
+dist
+.git
+.serena
+.lovable
+*.log
+Dockerfile
+docker-compose.yml
