@@ -2,40 +2,21 @@ import { useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import { cn } from "@/lib/utils";
+import logo from "@/assets/afri-clyde.jpeg";
 
 const nav = [
   { to: "/", label: "Home" },
   { to: "/about", label: "About" },
   { to: "/services", label: "Services" },
   { to: "/industries", label: "Industries" },
-  { to: "/careers", label: "Careers" },
   { to: "/faqs", label: "FAQs" },
   { to: "/contact", label: "Contact" },
 ] as const;
 
 export function Logo({ light = false }: { light?: boolean }) {
   return (
-    <Link to="/" className="flex shrink-0 items-center gap-2.5" aria-label="Africlyde Trading & Logistics home">
-      <span className="grid size-9 place-items-center rounded-md bg-accent">
-        <svg viewBox="0 0 24 24" className="size-5" fill="none" stroke="currentColor" strokeWidth="2.2">
-          <path d="M3 17V9l9-5 9 5v8l-9 5-9-5Z" className="text-navy" stroke="currentColor" />
-          <path d="M3 9l9 5 9-5M12 22v-8" className="text-navy" stroke="currentColor" />
-        </svg>
-      </span>
-      <span className="min-w-0">
-        <span
-          className={cn(
-            "block text-[1.05rem] leading-none font-extrabold tracking-tight",
-            light ? "text-navy-foreground" : "text-navy",
-          )}
-        >
-          AFRICLYDE
-        </span>
-        <span className="block text-[0.62rem] leading-tight font-semibold tracking-[0.18em] text-accent">
-          TRADING &amp; LOGISTICS
-        </span>
-      </span>
+    <Link to="/" className="flex shrink-0 items-center" aria-label="Africlyde Trading & Logistics home">
+      <img src={logo} alt="Africlyde Trading & Logistics" className="h-10 w-auto" />
     </Link>
   );
 }
@@ -49,8 +30,12 @@ export function Header() {
         <div className="container-page flex h-9 items-center justify-between text-xs">
           <p className="text-navy-foreground/75">Pan-African freight, customs and supply chain solutions.</p>
           <div className="flex items-center gap-5">
-            <a href="tel:+233302000000" className="inline-flex items-center gap-1.5 hover:text-accent">
-              <Phone className="size-3.5" /> +233 302 000 000
+            <a href="tel:+233579111777" className="inline-flex items-center gap-1.5 hover:text-accent">
+              <Phone className="size-3.5" /> +233 57 911 1777
+            </a>
+            <span className="text-navy-foreground/40">|</span>
+            <a href="tel:+447990453547" className="inline-flex items-center gap-1.5 hover:text-accent">
+              <Phone className="size-3.5" /> +44 7990 453547
             </a>
           </div>
         </div>

@@ -5,7 +5,6 @@ import { Reveal } from "@/components/site/Reveal";
 import { Counter } from "@/components/site/Counter";
 import { Icon } from "@/components/site/Icon";
 import { CtaBanner, SectionHeading } from "@/components/site/Blocks";
-import { CoverageMap } from "@/components/site/CoverageMap";
 import { Testimonials } from "@/components/site/Testimonials";
 import { services, stats, whyChoose, industries, clients } from "@/lib/site-data";
 import heroPort from "@/assets/hero-port.jpg";
@@ -107,7 +106,7 @@ function Home() {
               className="w-full rounded-2xl object-cover shadow-[var(--shadow-elevate)]"
             />
             <div className="absolute -right-2 -bottom-6 rounded-xl bg-accent px-6 py-5 text-accent-foreground shadow-[var(--shadow-elevate)] lg:-right-8">
-              <p className="text-3xl font-extrabold">18</p>
+              <p className="text-3xl font-extrabold">6+</p>
               <p className="text-xs font-semibold tracking-wide">Years moving African cargo</p>
             </div>
           </Reveal>
@@ -191,20 +190,6 @@ function Home() {
                 </div>
               </Reveal>
             ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Coverage */}
-      <section className="section-y bg-surface">
-        <div className="container-page">
-          <SectionHeading
-            eyebrow="Coverage"
-            title="A network built around African trade routes"
-            body="Hover any node to see our offices, warehouses and distribution hubs, and the corridors that connect them."
-          />
-          <div className="mt-12">
-            <CoverageMap />
           </div>
         </div>
       </section>

@@ -165,21 +165,14 @@ export const testimonials = [
   {
     quote:
       "Africlyde cut our port-to-plant lead time from eleven days to four. Their clearance team files before the vessel berths — that alone changed our production planning.",
-    name: "Adaeze Okonkwo",
+    name: "Wisdom Quarcoo",
     role: "Supply Chain Director",
     company: "Atlas Manufacturing",
   },
   {
     quote:
-      "We move temperature-sensitive vaccines into six countries. Africlyde is the only partner that has never broken our cold chain, and we can prove it with their data.",
-    name: "Dr. Samuel Mwangi",
-    role: "Head of Distribution",
-    company: "MediSupply Africa",
-  },
-  {
-    quote:
       "The control tower gives our board one dashboard for every shipment. Visibility like that used to be reserved for multinationals.",
-    name: "Kofi Mensah",
+    name: "Majorie Naa Adjetey",
     role: "Chief Operating Officer",
     company: "Volta Commodities",
   },
@@ -220,24 +213,7 @@ export const faqs = [
     a: "All cargo moves under a marine all-risk policy by default. Declared-value cover and specialist policies for project or high-value cargo are available on request.",
   },
   {
-    q: "Do you offer bonded warehousing?",
-    a: "Yes. Bonded space is available in Accra, Lagos, Nairobi and Johannesburg, alongside general, ambient and temperature-controlled storage.",
-  },
-  {
     q: "What are your standard transit times?",
     a: "Air freight typically runs 1–3 days intra-Africa, sea freight 14–35 days depending on lane, and road corridor moves 2–9 days. Your quotation states committed transit times per lane.",
   },
-  {
-    q: "How do you handle dangerous goods?",
-    a: "Our teams are IATA DGR and ADR trained. We handle classification, packing verification, documentation and carrier approval for most classes, excluding explosives class 1.",
-  },
-];
-
-export const roles = [
-  { title: "Customs Brokerage Manager", location: "Accra, Ghana", type: "Full-time", team: "Operations" },
-  { title: "Fleet Operations Supervisor", location: "Lagos, Nigeria", type: "Full-time", team: "Road Freight" },
-  { title: "Key Account Manager – Mining", location: "Johannesburg, South Africa", type: "Full-time", team: "Commercial" },
-  { title: "Warehouse Team Lead", location: "Nairobi, Kenya", type: "Full-time", team: "Warehousing" },
-  { title: "Control Tower Analyst", location: "Accra, Ghana", type: "Full-time", team: "Technology" },
-  { title: "Trade & Procurement Officer", location: "Accra, Ghana", type: "Full-time", team: "Trading" },
 ];

@@ -1,5 +1,5 @@
 import { Link } from "@tanstack/react-router";
-import { Linkedin, Twitter, Facebook, Instagram, Mail, Phone, MapPin } from "lucide-react";
+import { Linkedin, Twitter, Facebook, Instagram, Mail, Phone, MapPin, ArrowRight } from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -55,7 +55,6 @@ export function Footer() {
             {[
               { to: "/about", label: "About Us" },
               { to: "/industries", label: "Industries" },
-              { to: "/careers", label: "Careers" },
               { to: "/faqs", label: "FAQs" },
               { to: "/privacy", label: "Privacy Policy" },
             ].map((l) => (
@@ -77,9 +76,13 @@ export function Footer() {
             </li>
             <li className="flex gap-3">
               <Phone className="mt-0.5 size-4 shrink-0 text-accent" />
-              <a href="tel:+233302000000" className="hover:text-accent">
-                +233 302 000 000
-              </a>
+              <span>
+                <a href="tel:+233579111777" className="hover:text-accent">+233 57 911 1777</a>
+                <span className="text-xs text-navy-foreground/50"> (Ghana)</span>
+                <br />
+                <a href="tel:+447990453547" className="hover:text-accent">+44 7990 453547</a>
+                <span className="text-xs text-navy-foreground/50"> (UK)</span>
+              </span>
             </li>
             <li className="flex gap-3">
               <Mail className="mt-0.5 size-4 shrink-0 text-accent" />
@@ -116,6 +119,20 @@ export function Footer() {
               </Button>
             </div>
           </form>
+        </div>
+      </div>
+
+      <div className="border-t border-white/10 bg-white/[0.03]">
+        <div className="container-page flex flex-col items-center justify-between gap-3 py-8 text-center sm:flex-row sm:text-left">
+          <p className="text-2xl font-extrabold tracking-tight text-navy-foreground sm:text-3xl">
+            LET'S TALK LOGISTICS
+          </p>
+          <Link
+            to="/quote"
+            className="inline-flex items-center gap-1.5 text-sm font-semibold text-accent transition-colors hover:text-navy-foreground"
+          >
+            Get a Quote <ArrowRight className="size-4" />
+          </Link>
         </div>
       </div>
 

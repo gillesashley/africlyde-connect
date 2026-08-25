@@ -8,7 +8,6 @@ import { Label } from "@/components/ui/label";
 import { Textarea } from "@/components/ui/textarea";
 import { PageHero } from "@/components/site/Blocks";
 import { Reveal } from "@/components/site/Reveal";
-import { locations } from "@/lib/site-data";
 
 export const Route = createFileRoute("/contact")({
   head: () => ({
@@ -96,9 +95,13 @@ function Contact() {
                 </li>
                 <li className="flex gap-3">
                   <Phone className="mt-0.5 size-4 shrink-0 text-accent" />
-                  <a href="tel:+233302000000" className="hover:text-accent">
-                    +233 302 000 000
-                  </a>
+                  <span>
+                    <a href="tel:+233579111777" className="hover:text-accent">+233 57 911 1777</a>
+                    <span className="text-xs text-muted-foreground"> (Ghana)</span>
+                    <br />
+                    <a href="tel:+447990453547" className="hover:text-accent">+44 7990 453547</a>
+                    <span className="text-xs text-muted-foreground"> (UK)</span>
+                  </span>
                 </li>
                 <li className="flex gap-3">
                   <Mail className="mt-0.5 size-4 shrink-0 text-accent" />
@@ -116,7 +119,10 @@ function Contact() {
             <Reveal delay={100} className="rounded-2xl border border-border bg-card p-7">
               <h2 className="text-xl font-extrabold text-navy">Regional offices</h2>
               <ul className="mt-5 grid gap-2.5 text-sm sm:grid-cols-2">
-                {locations.slice(1).map((l) => (
+                {[
+                  { city: "Ghana", type: "Regional Hub" },
+                  { city: "Glasgow", type: "Regional Hub" },
+                ].map((l) => (
                   <li key={l.city} className="flex items-baseline justify-between gap-3 border-b border-border pb-2">
                     <span className="font-semibold text-navy">{l.city}</span>
                     <span className="text-xs text-muted-foreground">{l.type}</span>

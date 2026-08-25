@@ -20,7 +20,7 @@ export const Route = createFileRoute("/about")({
       { property: "og:title", content: "About Africlyde Trading & Logistics" },
       {
         property: "og:description",
-        content: "18 years moving African cargo with owned assets, licensed brokerage and a 24/7 control tower.",
+        content: "6+ years moving African cargo with owned assets, licensed brokerage and a 24/7 control tower.",
       },
       { property: "og:url", content: "/about" },
     ],
@@ -66,7 +66,7 @@ function About() {
             <SectionHeading
               eyebrow="Our story"
               title="From one brokerage desk in Tema to 8 markets"
-              body="We started by clearing other people's containers faster than anyone else at Tema port. Eighteen years later we run fleet, warehousing, brokerage and 4PL control-tower services — but the operating principle has not changed: know the route better than anyone, and never hand a client a surprise."
+              body="We started by clearing other people's containers faster than anyone else at Tema port. Six years later we run fleet, warehousing, brokerage and 4PL control-tower services — but the operating principle has not changed: know the route better than anyone, and never hand a client a surprise."
             />
             <div className="mt-8 grid gap-4 sm:grid-cols-2">
               {values.map((v) => (
