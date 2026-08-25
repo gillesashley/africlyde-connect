@@ -47,7 +47,9 @@ function ErrorComponent({ error, reset }: { error: Error; reset: () => void }) {
   return (
     <div className="flex min-h-[70vh] items-center justify-center bg-background px-4">
       <div className="max-w-md text-center">
-        <h1 className="text-xl font-semibold tracking-tight text-foreground">This page didn't load</h1>
+        <h1 className="text-xl font-semibold tracking-tight text-foreground">
+          This page didn't load
+        </h1>
         <p className="mt-2 text-sm text-muted-foreground">
           Something went wrong on our end. You can try refreshing or head back home.
         </p>
@@ -82,7 +84,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
       {
         name: "description",
         content:
-          "Africlyde Trading & Logistics delivers air, sea and road freight, customs clearance, warehousing and supply chain solutions across 8 African markets.",
+          "Africlyde Trading & Logistics delivers door-to-door shipping to Ghana, air, sea and road freight, customs clearance and supply chain solutions across 8 African markets.",
       },
       { name: "author", content: "Africlyde Trading & Logistics" },
       { property: "og:site_name", content: "Africlyde Trading & Logistics" },
@@ -107,7 +109,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
           "@type": "Organization",
           name: "Africlyde Trading & Logistics",
           description:
-            "Pan-African freight forwarding, customs brokerage, warehousing and supply chain management.",
+            "Pan-African freight forwarding, customs brokerage, door-to-door shipping and supply chain management.",
           address: {
             "@type": "PostalAddress",
             streetAddress: "Airport City, Liberation Road",
@@ -115,7 +117,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             addressCountry: "GH",
           },
           telephone: "+233579111777",
-          email: "hello@africlyde.com",
+          email: "info@africlyde.co.uk",
         }),
       },
     ],

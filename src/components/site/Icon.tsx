@@ -28,6 +28,8 @@ import {
   Import,
   Upload,
   Handshake,
+  DoorOpen,
+  ShoppingCart,
   type LucideIcon,
 } from "lucide-react";
 
@@ -60,6 +62,8 @@ const map: Record<string, LucideIcon> = {
   Import,
   Upload,
   Handshake,
+  DoorOpen,
+  ShoppingCart,
   Crane: Container,
 };
 

@@ -12,7 +12,7 @@ export const Route = createFileRoute("/services/")({
       {
         name: "description",
         content:
-          "Air freight, sea freight, road freight, customs clearance, warehousing, distribution, last-mile, cross-border, import, export, trading and supply chain management across Africa.",
+          "Door-to-door shipping to Ghana, online shopping forwarding, air, sea, road freight, customs clearance, last-mile, cross-border, import, export, trading and supply chain management across Africa.",
       },
       { property: "og:title", content: "Logistics Services | Africlyde Trading & Logistics" },
       {

@@ -17,12 +17,12 @@ export const Route = createFileRoute("/")({
       {
         name: "description",
         content:
-          "Reliable freight forwarding, customs brokerage, warehousing and supply chain solutions across 8 African markets. Request a quote today.",
+          "Door-to-door shipping to Ghana, freight forwarding, customs brokerage and supply chain solutions across 8 African markets. Request a quote today.",
       },
       { property: "og:title", content: "Africlyde Trading & Logistics | Moving Africa Forward" },
       {
         property: "og:description",
-        content: "Air, sea and road freight, customs clearance and warehousing across Africa.",
+        content: "Door-to-door shipping to Ghana, plus air, sea and road freight and customs clearance across Africa.",
       },
       { property: "og:url", content: "/" },
     ],
@@ -56,7 +56,7 @@ function Home() {
             Moving Africa Forward, One Shipment at a Time.
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-navy-foreground/80 lg:text-lg">
-            Reliable logistics, freight forwarding, customs brokerage, warehousing and supply chain solutions across
+            Reliable door-to-door shipping to Ghana, freight forwarding, customs brokerage and supply chain solutions across
             Africa and beyond.
           </p>
           <div className="mt-9 flex flex-wrap gap-3">
@@ -146,8 +146,8 @@ function Home() {
         <div className="container-page">
           <SectionHeading
             eyebrow="Our Services"
-            title="End-to-end logistics, delivered by specialists"
-            body="Twelve service lines, one accountable partner. Every mode is planned, executed and reported by teams who own the outcome."
+            title="Logistics made simple — door-to-door or door-to-port"
+            body="From sending a parcel to your family in Ghana to full freight programmes, one accountable partner plans, clears and delivers it."
           />
           <div className="mt-12 grid gap-5 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-5">
             {services.map((s, i) => (

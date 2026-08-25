@@ -105,8 +105,8 @@ function Contact() {
                 </li>
                 <li className="flex gap-3">
                   <Mail className="mt-0.5 size-4 shrink-0 text-accent" />
-                  <a href="mailto:hello@africlyde.com" className="hover:text-accent">
-                    hello@africlyde.com
+                  <a href="mailto:info@africlyde.co.uk" className="hover:text-accent">
+                    info@africlyde.co.uk
                   </a>
                 </li>
                 <li className="flex gap-3">

@@ -9,6 +9,24 @@ export type Service = {
 
 export const services: Service[] = [
   {
+    slug: "door-to-door-shipping",
+    title: "Door-to-Door Shipping",
+    icon: "DoorOpen",
+    short: "Ship from the UK, US or Europe to any address in Ghana — we collect, clear and deliver.",
+    description:
+      "One all-inclusive price covers collection from your door, air or sea carriage, customs clearance and delivery to any address in Ghana. No clearing agents to deal with and no surprise charges at arrival — one point of contact from pickup to delivery.",
+    highlights: ["Collection from your door", "All-inclusive pricing", "Customs clearance included", "Delivery anywhere in Ghana"],
+  },
+  {
+    slug: "online-shopping-to-ghana",
+    title: "Online Shopping to Ghana",
+    icon: "ShoppingCart",
+    short: "Buy from UK and US online stores and we bring your orders to your door in Ghana.",
+    description:
+      "Shop from Amazon, eBay, ASOS and hundreds of UK and US retailers. We provide a UK shipping address, consolidate your purchases and deliver them safely to any address in Ghana — with duties and taxes handled for you.",
+    highlights: ["Free UK shipping address", "Package consolidation", "Duties and taxes handled", "Delivery to your door in Ghana"],
+  },
+  {
     slug: "air-freight",
     title: "Air Freight",
     icon: "Plane",
@@ -43,24 +61,6 @@ export const services: Service[] = [
     description:
       "Licensed brokers, pre-arrival filing and tariff classification that minimise duty exposure and avoid demurrage. We handle permits, exemptions and regulatory inspections.",
     highlights: ["Licensed brokerage", "HS classification & duty optimisation", "Permit and exemption handling", "Pre-arrival clearance"],
-  },
-  {
-    slug: "warehousing",
-    title: "Warehousing",
-    icon: "Warehouse",
-    short: "Bonded and general storage with WMS-driven inventory accuracy.",
-    description:
-      "Secure, racked and CCTV-monitored facilities with bonded space, ambient and temperature-controlled zones, cycle counting and real-time inventory reporting.",
-    highlights: ["Bonded and general storage", "Real-time WMS visibility", "Pick, pack and kitting", "Temperature-controlled zones"],
-  },
-  {
-    slug: "distribution",
-    title: "Distribution",
-    icon: "Network",
-    short: "Multi-drop national distribution built around your service-level commitments.",
-    description:
-      "Route-optimised secondary distribution from hub to retail, clinic or site, with proof-of-delivery capture and daily performance reporting.",
-    highlights: ["Route optimisation", "Electronic proof of delivery", "Retail and DC compliance", "SLA performance reporting"],
   },
   {
     slug: "last-mile-delivery",
