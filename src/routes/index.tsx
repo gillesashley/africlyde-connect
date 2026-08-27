@@ -9,6 +9,10 @@ import { Testimonials } from "@/components/site/Testimonials";
 import { services, stats, whyChoose, industries, clients } from "@/lib/site-data";
 import heroPort from "@/assets/hero-port.jpg";
 import aboutTeam from "@/assets/about-team.jpg";
+import ukFlag from "@/assets/Flag_of_the_United_Kingdom.svg";
+import scotlandFlag from "@/assets/Flag_of_Scotland.svg";
+import ghanaFlag from "@/assets/Flag_of_Ghana.webp";
+import nigeriaFlag from "@/assets/Flag_of_Nigeria.svg";
 
 export const Route = createFileRoute("/")({
   head: () => ({
@@ -56,9 +60,18 @@ function Home() {
             Moving Africa Forward, One Shipment at a Time.
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-navy-foreground/80 lg:text-lg">
-            Reliable door-to-door shipping to Ghana, freight forwarding, customs brokerage and supply chain solutions across
-            Africa and beyond.
+            Door-to-door shipping from all over Scotland — Glasgow, Edinburgh, Dundee, Aberdeen, Stirling, Perth and more —
+            to any address in Ghana and across West Africa. Plus freight forwarding, customs brokerage and supply chain
+            solutions across Africa and beyond.
           </p>
+
+          <div className="mt-8 flex items-center gap-3 text-sm font-semibold text-navy-foreground/85">
+            <img src={ghanaFlag} alt="Flag of Ghana" className="h-8 w-12 rounded-[3px] object-cover shadow-sm" />
+            <img src={nigeriaFlag} alt="Flag of Nigeria" className="h-8 w-12 rounded-[3px] object-cover shadow-sm" />
+            <span className="mx-3 text-2xl text-accent">→</span>
+            <img src={scotlandFlag} alt="Flag of Scotland" className="h-8 w-12 rounded-[3px] object-cover shadow-sm" />
+            <img src={ukFlag} alt="Flag of the United Kingdom" className="h-8 w-12 rounded-[3px] object-cover shadow-sm" />
+          </div>
           <div className="mt-9 flex flex-wrap gap-3">
             <Button asChild variant="accent" size="xl">
               <Link to="/quote">

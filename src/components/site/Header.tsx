@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/afri-clyde.jpeg";
+import logo from "@/assets/afri-clyde.png";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -15,7 +15,11 @@ const nav = [
 
 export function Logo({ light = false }: { light?: boolean }) {
   return (
-    <Link to="/" className="flex shrink-0 items-center" aria-label="Africlyde Trading & Logistics home">
+    <Link
+      to="/"
+      className="flex shrink-0 items-center"
+      aria-label="Africlyde Trading & Logistics home"
+    >
       <img src={logo} alt="Africlyde Trading & Logistics" className="h-10 w-auto" />
     </Link>
   );
@@ -28,13 +32,21 @@ export function Header() {
     <header className="sticky top-0 z-50 border-b border-border/70 bg-background/85 backdrop-blur-xl">
       <div className="hidden border-b border-border/60 bg-navy text-navy-foreground lg:block">
         <div className="container-page flex h-9 items-center justify-between text-xs">
-          <p className="text-navy-foreground/75">Pan-African freight, customs and supply chain solutions.</p>
+          <p className="text-navy-foreground/75">
+            Pan-African freight, customs and supply chain solutions.
+          </p>
           <div className="flex items-center gap-5">
-            <a href="tel:+233579111777" className="inline-flex items-center gap-1.5 hover:text-accent">
+            <a
+              href="tel:+233579111777"
+              className="inline-flex items-center gap-1.5 hover:text-accent"
+            >
               <Phone className="size-3.5" /> +233 57 911 1777
             </a>
             <span className="text-navy-foreground/40">|</span>
-            <a href="tel:+447990453547" className="inline-flex items-center gap-1.5 hover:text-accent">
+            <a
+              href="tel:+447990453547"
+              className="inline-flex items-center gap-1.5 hover:text-accent"
+            >
               <Phone className="size-3.5" /> +44 7990 453547
             </a>
           </div>
@@ -71,7 +83,11 @@ export function Header() {
             aria-expanded={open}
             className="grid size-10 shrink-0 place-items-center rounded-md border border-border text-navy xl:hidden"
           >
-            {open ? <Menu className="size-5 rotate-90 transition-transform" /> : <Menu className="size-5" />}
+            {open ? (
+              <Menu className="size-5 rotate-90 transition-transform" />
+            ) : (
+              <Menu className="size-5" />
+            )}
           </button>
         </div>
       </div>
