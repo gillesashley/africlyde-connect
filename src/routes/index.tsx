@@ -7,8 +7,8 @@ import { Icon } from "@/components/site/Icon";
 import { CtaBanner, SectionHeading } from "@/components/site/Blocks";
 import { Testimonials } from "@/components/site/Testimonials";
 import { services, stats, whyChoose, industries, clients } from "@/lib/site-data";
-import heroPort from "@/assets/hero-port.jpg";
-import aboutTeam from "@/assets/about-team.jpg";
+import shipPort1 from "@/assets/ship_port1.jpeg";
+import shipPort2 from "@/assets/ship_port2.jpeg";
 import ukFlag from "@/assets/Flag_of_the_United_Kingdom.svg";
 import scotlandFlag from "@/assets/Flag_of_Scotland.svg";
 import ghanaFlag from "@/assets/Flag_of_Ghana.webp";
@@ -41,8 +41,8 @@ function Home() {
       {/* Hero */}
       <section className="relative isolate overflow-hidden bg-navy">
         <img
-          src={heroPort}
-          alt="Container terminal at dusk with gantry cranes loading a cargo vessel"
+          src={shipPort1}
+          alt="Port harbour with ships being loaded for export"
           width={1920}
           height={1088}
           className="absolute inset-0 size-full object-cover opacity-45"
@@ -111,8 +111,8 @@ function Home() {
         <div className="container-page grid items-center gap-12 lg:grid-cols-2 lg:gap-16">
           <Reveal className="relative">
             <img
-              src={aboutTeam}
-              alt="Africlyde warehouse team reviewing inventory data on tablets"
+              src={shipPort2}
+              alt="Harbour with cargo vessels being loaded"
               width={1200}
               height={900}
               loading="lazy"

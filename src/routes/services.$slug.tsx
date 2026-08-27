@@ -5,7 +5,7 @@ import { CtaBanner } from "@/components/site/Blocks";
 import { Icon } from "@/components/site/Icon";
 import { Reveal } from "@/components/site/Reveal";
 import { services } from "@/lib/site-data";
-import airFreight from "@/assets/air-freight.jpg";
+import shipPort5 from "@/assets/ship_port5.jpeg";
 
 export const Route = createFileRoute("/services/$slug")({
   loader: ({ params }) => {
@@ -65,7 +65,7 @@ function ServiceDetail() {
             </div>
           </div>
           <img
-            src={airFreight}
+            src={shipPort5}
             alt={`${service.title} operations`}
             width={1200}
             height={800}
