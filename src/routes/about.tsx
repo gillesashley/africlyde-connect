@@ -5,8 +5,8 @@ import { CtaBanner, PageHero, SectionHeading } from "@/components/site/Blocks";
 import { Reveal } from "@/components/site/Reveal";
 import { Counter } from "@/components/site/Counter";
 import { stats } from "@/lib/site-data";
-import shipPort3 from "@/assets/ship_port3.jpeg";
-import shipPort4 from "@/assets/ship_port4.jpeg";
+import shipPort7 from "@/assets/ship_port7.jpeg";
+import shipPort6 from "@/assets/ship_port6.jpeg";
 
 export const Route = createFileRoute("/about")({
   head: () => ({
@@ -79,8 +79,8 @@ function About() {
           </div>
           <Reveal delay={120}>
             <img
-              src={shipPort3}
-              alt="Harbour with ships being loaded for export"
+              src={shipPort7}
+              alt="Port of Tema, Ghana — harbour with ships being loaded"
               width={1200}
               height={900}
               loading="lazy"
@@ -123,8 +123,8 @@ function About() {
         <div className="container-page grid items-center gap-12 lg:grid-cols-2">
           <Reveal>
             <img
-              src={shipPort4}
-              alt="Harbour with cargo ships being loaded"
+              src={shipPort6}
+              alt="Port of Tema, Ghana — cargo ships at harbour"
               width={1200}
               height={800}
               loading="lazy"

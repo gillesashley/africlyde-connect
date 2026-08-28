@@ -77,7 +77,7 @@ export function Footer() {
             <li className="flex gap-3">
               <Phone className="mt-0.5 size-4 shrink-0 text-accent" />
               <span>
-                <a href="tel:+233579111777" className="hover:text-accent">+233 57 911 1777</a>
+                <a href="tel:+233209372725" className="hover:text-accent">+233 20 937 2725</a>
                 <span className="text-xs text-navy-foreground/50"> (Ghana)</span>
                 <br />
                 <a href="tel:+447990453547" className="hover:text-accent">+44 7990 453547</a>

@@ -116,7 +116,7 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
             addressLocality: "Accra",
             addressCountry: "GH",
           },
-          telephone: "+233579111777",
+          telephone: "+233209372725",
           email: "info@africlyde.co.uk",
         }),
       },
