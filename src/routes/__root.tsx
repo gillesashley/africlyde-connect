@@ -80,14 +80,14 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
     meta: [
       { charSet: "utf-8" },
       { name: "viewport", content: "width=device-width, initial-scale=1" },
-      { title: "Africlyde Trading & Logistics | Freight & Supply Chain Across Africa" },
+      { title: "AfClyde Logistics and Trading | Freight & Supply Chain Across Africa" },
       {
         name: "description",
         content:
-          "Africlyde Trading & Logistics delivers door-to-door shipping to Ghana, air, sea and road freight, customs clearance and supply chain solutions across 8 African markets.",
+          "AfClyde Logistics and Trading delivers door-to-door shipping to Ghana, air, sea and road freight, customs clearance and supply chain solutions across 8 African markets.",
       },
-      { name: "author", content: "Africlyde Trading & Logistics" },
-      { property: "og:site_name", content: "Africlyde Trading & Logistics" },
+      { name: "author", content: "AfClyde Logistics and Trading" },
+      { property: "og:site_name", content: "AfClyde Logistics and Trading" },
       { property: "og:type", content: "website" },
       { name: "twitter:card", content: "summary_large_image" },
     ],
@@ -107,16 +107,17 @@ export const Route = createRootRouteWithContext<{ queryClient: QueryClient }>()(
         children: JSON.stringify({
           "@context": "https://schema.org",
           "@type": "Organization",
-          name: "Africlyde Trading & Logistics",
+          name: "AfClyde Logistics and Trading",
           description:
             "Pan-African freight forwarding, customs brokerage, door-to-door shipping and supply chain management.",
           address: {
             "@type": "PostalAddress",
-            streetAddress: "Airport City, Liberation Road",
-            addressLocality: "Accra",
-            addressCountry: "GH",
+            streetAddress: "Paisley, Glasgow",
+            addressLocality: "Paisley",
+            addressRegion: "Scotland",
+            addressCountry: "GB",
           },
-          telephone: "+233209372725",
+          telephone: "+233579111777",
           email: "info@africlyde.co.uk",
         }),
       },

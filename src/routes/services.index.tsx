@@ -8,13 +8,13 @@ import { services } from "@/lib/site-data";
 export const Route = createFileRoute("/services/")({
   head: () => ({
     meta: [
-      { title: "Our Services | Air, Sea, Road Freight & Customs | Africlyde" },
+      { title: "Our Services | Air, Sea, Road Freight & Customs | AfClyde" },
       {
         name: "description",
         content:
           "Door-to-door shipping to Ghana, online shopping forwarding, air, sea, road freight, customs clearance, last-mile, cross-border, import, export, trading and supply chain management across Africa.",
       },
-      { property: "og:title", content: "Logistics Services | Africlyde Trading & Logistics" },
+      { property: "og:title", content: "Logistics Services | AfClyde Logistics and Trading" },
       {
         property: "og:description",
         content: "Twelve specialist trading and logistics service lines delivered by one accountable African partner.",
@@ -32,7 +32,7 @@ function ServicesIndex() {
       <PageHero
         eyebrow="Our Services"
         title="Twelve service lines. One accountable trading and logistics partner."
-        body="From a single air waybill to a fully managed pan-African supply chain, every Africlyde service is delivered by specialists with owned assets and licensed authority behind them."
+        body="From a single air waybill to a fully managed pan-African supply chain, every AfClyde service is delivered by specialists with owned assets and licensed authority behind them."
       />
 
       <section className="section-y">

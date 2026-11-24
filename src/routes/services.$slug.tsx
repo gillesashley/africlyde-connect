@@ -15,14 +15,14 @@ export const Route = createFileRoute("/services/$slug")({
   },
   head: ({ params, loaderData }) => {
     if (!loaderData) {
-      return { meta: [{ title: "Service unavailable | Africlyde" }, { name: "robots", content: "noindex" }] };
+      return { meta: [{ title: "Service unavailable | AfClyde" }, { name: "robots", content: "noindex" }] };
     }
     const s = loaderData.service;
     return {
       meta: [
-        { title: `${s.title} | Africlyde Trading & Logistics` },
+        { title: `${s.title} | AfClyde Logistics and Trading` },
         { name: "description", content: s.short },
-        { property: "og:title", content: `${s.title} | Africlyde Trading & Logistics` },
+        { property: "og:title", content: `${s.title} | AfClyde Logistics and Trading` },
         { property: "og:description", content: s.short },
         { property: "og:url", content: `/services/${params.slug}` },
       ],

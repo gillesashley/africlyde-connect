@@ -11,13 +11,13 @@ import shipPort6 from "@/assets/ship_port6.jpeg";
 export const Route = createFileRoute("/about")({
   head: () => ({
     meta: [
-      { title: "About Us | Africlyde Trading & Logistics" },
+      { title: "About Us | AfClyde Logistics and Trading" },
       {
         name: "description",
         content:
-          "Africlyde Trading & Logistics is an African freight forwarding and supply chain company operating owned fleet, bonded warehouses and licensed brokerage across 8 markets.",
+          "AfClyde Logistics and Trading is an African freight forwarding and supply chain company operating owned fleet, bonded warehouses and licensed brokerage across 8 markets.",
       },
-      { property: "og:title", content: "About Africlyde Trading & Logistics" },
+      { property: "og:title", content: "About AfClyde Logistics and Trading" },
       {
         property: "og:description",
         content: "6+ years moving African cargo with owned assets, licensed brokerage and a 24/7 control tower.",
@@ -51,7 +51,7 @@ function About() {
       <PageHero
         eyebrow="About Us"
         title="Built in Africa, engineered for global trade."
-        body="Africlyde Trading & Logistics moves freight for mining houses, manufacturers, health ministries and retailers who cannot afford guesswork. We own the assets, hold the licences and publish the performance."
+        body="AfClyde Logistics and Trading moves freight for mining houses, manufacturers, health ministries and retailers who cannot afford guesswork. We own the assets, hold the licences and publish the performance."
       >
         <Button asChild variant="accent" size="xl">
           <Link to="/contact">

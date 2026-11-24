@@ -164,7 +164,7 @@ export const clients = [
 export const testimonials = [
   {
     quote:
-      "Africlyde cut our port-to-plant lead time from eleven days to four. Their clearance team files before the vessel berths — that alone changed our production planning.",
+      "AfClyde cut our port-to-plant lead time from eleven days to four. Their clearance team files before the vessel berths — that alone changed our production planning.",
     name: "Wisdom Quarcoo",
     role: "Supply Chain Director",
     company: "Atlas Manufacturing",

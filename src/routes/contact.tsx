@@ -12,13 +12,13 @@ import { Reveal } from "@/components/site/Reveal";
 export const Route = createFileRoute("/contact")({
   head: () => ({
     meta: [
-      { title: "Contact Us | Africlyde Trading & Logistics" },
+      { title: "Contact Us | AfClyde Logistics and Trading" },
       {
         name: "description",
         content:
-          "Contact Africlyde Trading & Logistics in Accra, Lagos, Nairobi, Johannesburg and 30 more markets. Phone, email and enquiry form with a four-hour response commitment.",
+          "Contact AfClyde Logistics and Trading in Accra, Lagos, Nairobi, Johannesburg and 30 more markets. Phone, email and enquiry form with a four-hour response commitment.",
       },
-      { property: "og:title", content: "Contact Africlyde Trading & Logistics" },
+      { property: "og:title", content: "Contact AfClyde Logistics and Trading" },
       { property: "og:description", content: "Reach our logistics teams across Africa — we reply within four hours." },
       { property: "og:url", content: "/contact" },
     ],
@@ -91,16 +91,13 @@ function Contact() {
               <ul className="mt-5 grid gap-4 text-sm text-charcoal">
                 <li className="flex gap-3">
                   <MapPin className="mt-0.5 size-4 shrink-0 text-accent" />
-                  Airport City, Liberation Road, Accra, Ghana
+                  Paisley, Glasgow, Scotland
                 </li>
                 <li className="flex gap-3">
                   <Phone className="mt-0.5 size-4 shrink-0 text-accent" />
                   <span>
-                    <a href="tel:+233209372725" className="hover:text-accent">+233 20 937 2725</a>
+                    <a href="tel:+233579111777" className="hover:text-accent">+233 57 911 1777</a>
                     <span className="text-xs text-muted-foreground"> (Ghana)</span>
-                    <br />
-                    <a href="tel:+447990453547" className="hover:text-accent">+44 7990 453547</a>
-                    <span className="text-xs text-muted-foreground"> (UK)</span>
                   </span>
                 </li>
                 <li className="flex gap-3">

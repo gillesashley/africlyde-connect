@@ -1,15 +1,13 @@
 import { createFileRoute, Link } from "@tanstack/react-router";
-import { ArrowRight, CheckCircle2 } from "lucide-react";
+import { ArrowLeftRight, ArrowRight, CheckCircle2 } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Reveal } from "@/components/site/Reveal";
 import { Counter } from "@/components/site/Counter";
 import { Icon } from "@/components/site/Icon";
 import { CtaBanner, SectionHeading } from "@/components/site/Blocks";
-import { Testimonials } from "@/components/site/Testimonials";
-import { services, stats, whyChoose, industries, clients } from "@/lib/site-data";
-import shipPort1 from "@/assets/ship_port1.jpeg";
+import { services, stats, whyChoose } from "@/lib/site-data";
+import shipPort8 from "@/assets/ship_port8.jpeg";
 import shipPort6 from "@/assets/ship_port6.jpeg";
-import ukFlag from "@/assets/Flag_of_the_United_Kingdom.svg";
 import scotlandFlag from "@/assets/Flag_of_Scotland.svg";
 import ghanaFlag from "@/assets/Flag_of_Ghana.webp";
 import nigeriaFlag from "@/assets/Flag_of_Nigeria.svg";
@@ -17,13 +15,13 @@ import nigeriaFlag from "@/assets/Flag_of_Nigeria.svg";
 export const Route = createFileRoute("/")({
   head: () => ({
     meta: [
-      { title: "Africlyde Trading & Logistics | Moving Africa Forward, One Shipment at a Time" },
+      { title: "AfClyde Logistics and Trading | Your Trusted Shipping Partner" },
       {
         name: "description",
         content:
           "Door-to-door shipping to Ghana, freight forwarding, customs brokerage and supply chain solutions across 8 African markets. Request a quote today.",
       },
-      { property: "og:title", content: "Africlyde Trading & Logistics | Moving Africa Forward" },
+      { property: "og:title", content: "AfClyde Logistics and Trading | Your Trusted Shipping Partner" },
       {
         property: "og:description",
         content: "Door-to-door shipping to Ghana, plus air, sea and road freight and customs clearance across Africa.",
@@ -41,7 +39,7 @@ function Home() {
       {/* Hero */}
       <section className="relative isolate overflow-hidden bg-navy">
         <img
-          src={shipPort1}
+          src={shipPort8}
           alt="Port of Tema, Ghana — harbour with ships being loaded for export"
           width={1920}
           height={1088}
@@ -57,7 +55,7 @@ function Home() {
             Pan-African logistics
           </span>
           <h1 className="mt-5 max-w-4xl text-4xl leading-[1.05] font-extrabold sm:text-6xl lg:text-7xl">
-            Moving Africa Forward, One Shipment at a Time.
+            Your Trusted Shipping Partner, Connecting Scotland and Ghana One Shipment at a Time.
           </h1>
           <p className="mt-6 max-w-2xl text-base leading-relaxed text-navy-foreground/80 lg:text-lg">
             Door-to-door shipping from all over Scotland — Glasgow, Edinburgh, Dundee, Aberdeen, Stirling, Perth and more —
@@ -65,12 +63,11 @@ function Home() {
             solutions across Africa and beyond.
           </p>
 
-          <div className="mt-8 flex items-center gap-3 text-sm font-semibold text-navy-foreground/85">
-            <img src={ghanaFlag} alt="Flag of Ghana" className="h-8 w-12 rounded-[3px] object-cover shadow-sm" />
-            <img src={nigeriaFlag} alt="Flag of Nigeria" className="h-8 w-12 rounded-[3px] object-cover shadow-sm" />
-            <span className="mx-3 text-2xl text-accent">→</span>
-            <img src={scotlandFlag} alt="Flag of Scotland" className="h-8 w-12 rounded-[3px] object-cover shadow-sm" />
-            <img src={ukFlag} alt="Flag of the United Kingdom" className="h-8 w-12 rounded-[3px] object-cover shadow-sm" />
+          <div className="mt-8 flex flex-wrap items-center gap-3 text-sm font-semibold text-navy-foreground/85">
+            <img src={scotlandFlag} alt="Scotland" className="h-8 w-12 rounded-[3px] object-cover shadow-sm" />
+            <ArrowLeftRight aria-label="and vice versa" className="mx-1 size-6 shrink-0 text-accent" />
+            <img src={ghanaFlag} alt="Ghana" className="h-8 w-12 rounded-[3px] object-cover shadow-sm" />
+            <img src={nigeriaFlag} alt="Nigeria" className="h-8 w-12 rounded-[3px] object-cover shadow-sm" />
           </div>
           <div className="mt-9 flex flex-wrap gap-3">
             <Button asChild variant="accent" size="xl">
@@ -126,9 +123,9 @@ function Home() {
 
           <div>
             <SectionHeading
-              eyebrow="About Africlyde"
-              title="An African logistics company built on precision, not promises."
-              body="Founded in Accra and now operating across 8 markets, Africlyde combines owned assets — fleet, warehouses, licensed brokerage — with a control tower that gives shippers the visibility multinationals expect. We plan routes around real African infrastructure, and we publish our performance."
+              eyebrow="About AfClyde"
+              title="AfClyde — Connecting Scotland to Ghana, One Shipment at a Time."
+              body="Built on reliability, precision and customer satisfaction, AfClyde is a Scotland-based door-to-door shipping company dedicated to connecting individuals, families and businesses across Scotland and Ghana. We specialise in the secure collection, consolidation, transportation and delivery of personal belongings, household goods and commercial cargo from your doorstep in Scotland to your loved ones or business destination in Ghana. Through carefully coordinated logistics, trusted shipping partnerships and efficient transportation networks, we make international shipping simpler, more transparent and dependable. From collection to final delivery, we prioritise cargo safety, clear communication and customer satisfaction."
             />
             <Reveal delay={120} className="mt-8 grid gap-4 sm:grid-cols-2">
               {[
@@ -189,7 +186,7 @@ function Home() {
       <section className="section-y">
         <div className="container-page">
           <SectionHeading
-            eyebrow="Why Africlyde"
+            eyebrow="Why AfClyde"
             title="The reasons shippers stay with us"
             align="center"
           />
@@ -204,60 +201,6 @@ function Home() {
               </Reveal>
             ))}
           </div>
-        </div>
-      </section>
-
-      {/* Industries */}
-      <section className="section-y">
-        <div className="container-page">
-          <SectionHeading
-            eyebrow="Industries"
-            title="Sector expertise that shortens the learning curve"
-            body="Each industry brings its own compliance, handling and service-level realities. We staff accordingly."
-          />
-          <div className="mt-12 grid gap-4 sm:grid-cols-2 lg:grid-cols-5">
-            {industries.map((ind, i) => (
-              <Reveal key={ind.slug} delay={(i % 5) * 60}>
-                <div className="card-lift h-full rounded-xl border border-border bg-card p-5">
-                  <Icon name={ind.icon} className="size-5 text-accent" />
-                  <h3 className="mt-4 font-bold text-navy">{ind.title}</h3>
-                  <p className="mt-1.5 text-sm leading-relaxed text-muted-foreground">{ind.body}</p>
-                </div>
-              </Reveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Clients marquee */}
-      <section className="border-y border-border bg-surface py-12">
-        <div className="container-page">
-          <p className="text-center text-xs font-bold tracking-[0.22em] text-muted-foreground uppercase">
-            Trusted by leading African enterprises
-          </p>
-        </div>
-        <div className="mt-8 overflow-hidden [mask-image:linear-gradient(90deg,transparent,black_8%,black_92%,transparent)]">
-          <div className="marquee-track gap-12 pr-12">
-            {[...clients, ...clients].map((c, i) => (
-              <span key={i} className="text-xl font-extrabold whitespace-nowrap text-navy/35">
-                {c}
-              </span>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Testimonials */}
-      <section className="section-y">
-        <div className="container-page grid gap-10 lg:grid-cols-[0.85fr_1.15fr] lg:items-center">
-          <SectionHeading
-            eyebrow="Testimonials"
-            title="What our clients say"
-            body="Supply chain leaders across mining, healthcare, retail and commodities on what changed after switching to Africlyde."
-          />
-          <Reveal delay={100}>
-            <Testimonials />
-          </Reveal>
         </div>
       </section>
 

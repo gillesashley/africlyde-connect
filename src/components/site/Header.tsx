@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "@tanstack/react-router";
 import { Menu, X, Phone } from "lucide-react";
 import { Button } from "@/components/ui/button";
-import logo from "@/assets/afri-clyde.png";
+import logo from "@/assets/afri-clyde.jpeg";
 
 const nav = [
   { to: "/", label: "Home" },
@@ -18,9 +18,9 @@ export function Logo({ light = false }: { light?: boolean }) {
     <Link
       to="/"
       className="flex shrink-0 items-center"
-      aria-label="Africlyde Trading & Logistics home"
+      aria-label="AfClyde Logistics and Trading home"
     >
-      <img src={logo} alt="Africlyde Trading & Logistics" className="h-14 w-auto" />
+      <img src={logo} alt="AfClyde Logistics and Trading" className="h-14 w-auto" />
     </Link>
   );
 }
@@ -37,17 +37,10 @@ export function Header() {
           </p>
           <div className="flex items-center gap-5">
             <a
-              href="tel:+233209372725"
+              href="tel:+233579111777"
               className="inline-flex items-center gap-1.5 hover:text-accent"
             >
-              <Phone className="size-3.5" /> +233 20 937 2725
-            </a>
-            <span className="text-navy-foreground/40">|</span>
-            <a
-              href="tel:+447990453547"
-              className="inline-flex items-center gap-1.5 hover:text-accent"
-            >
-              <Phone className="size-3.5" /> +44 7990 453547
+              <Phone className="size-3.5" /> +233 57 911 1777
             </a>
           </div>
         </div>

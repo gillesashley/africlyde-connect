@@ -6,13 +6,13 @@ import { faqs } from "@/lib/site-data";
 export const Route = createFileRoute("/faqs")({
   head: () => ({
     meta: [
-      { title: "FAQs | Africlyde Trading & Logistics" },
+      { title: "FAQs | AfClyde Logistics and Trading" },
       {
         name: "description",
         content:
-          "Answers on quotes, transit times, customs clearance, cargo insurance, bonded warehousing, tracking and dangerous goods handling at Africlyde Trading & Logistics.",
+          "Answers on quotes, transit times, customs clearance, cargo insurance, bonded warehousing, tracking and dangerous goods handling at AfClyde Logistics and Trading.",
       },
-      { property: "og:title", content: "Frequently Asked Questions | Africlyde Trading & Logistics" },
+      { property: "og:title", content: "Frequently Asked Questions | AfClyde Logistics and Trading" },
       { property: "og:description", content: "Quotes, transit times, customs, insurance and tracking — answered." },
       { property: "og:url", content: "/faqs" },
     ],

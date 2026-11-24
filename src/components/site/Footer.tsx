@@ -1,5 +1,14 @@
 import { Link } from "@tanstack/react-router";
-import { Linkedin, Twitter, Facebook, Instagram, Mail, Phone, MapPin, ArrowRight } from "lucide-react";
+import {
+  Linkedin,
+  Twitter,
+  Facebook,
+  Instagram,
+  Mail,
+  Phone,
+  MapPin,
+  ArrowRight,
+} from "lucide-react";
 import { toast } from "sonner";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
@@ -13,8 +22,11 @@ export function Footer() {
         <div className="max-w-sm">
           <Logo light />
           <p className="mt-5 text-sm leading-relaxed text-navy-foreground/70">
-            Africlyde Trading & Logistics is a technology-enabled freight forwarding, customs brokerage and supply chain
-            partner moving cargo across 8 African markets and the global lanes that feed them.
+            AfClyde Logistics and Trading specialises in reliable, affordable door-to-door shipping
+            between Scotland and Ghana. We collect, consolidate and deliver personal belongings,
+            household items, parcels and commercial goods with care. Our commitment is to provide
+            convenient, secure and timely deliveries, prioritising customer satisfaction,
+            transparency and trust every step of the journey.
           </p>
           <div className="mt-6 flex gap-2">
             {[Linkedin, Twitter, Facebook, Instagram].map((SocialIcon, i) => (
@@ -23,7 +35,7 @@ export function Footer() {
                 href="https://www.linkedin.com"
                 target="_blank"
                 rel="noreferrer noopener"
-                aria-label="Africlyde on social media"
+                aria-label="AfClyde on social media"
                 className="grid size-9 place-items-center rounded-md border border-white/15 text-navy-foreground/80 transition-colors hover:border-accent hover:text-accent"
               >
                 <SocialIcon className="size-4" />
@@ -59,7 +71,10 @@ export function Footer() {
               { to: "/privacy", label: "Privacy Policy" },
             ].map((l) => (
               <li key={l.to}>
-                <Link to={l.to} className="text-navy-foreground/70 transition-colors hover:text-accent">
+                <Link
+                  to={l.to}
+                  className="text-navy-foreground/70 transition-colors hover:text-accent"
+                >
                   {l.label}
                 </Link>
               </li>
@@ -72,16 +87,15 @@ export function Footer() {
           <ul className="mt-4 space-y-3 text-sm text-navy-foreground/70">
             <li className="flex gap-3">
               <MapPin className="mt-0.5 size-4 shrink-0 text-accent" />
-              <span>Airport City, Liberation Road, Accra, Ghana</span>
+              <span>Paisley, Glasgow, Scotland</span>
             </li>
             <li className="flex gap-3">
               <Phone className="mt-0.5 size-4 shrink-0 text-accent" />
               <span>
-                <a href="tel:+233209372725" className="hover:text-accent">+233 20 937 2725</a>
+                <a href="tel:+233579111777" className="hover:text-accent">
+                  +233 57 911 1777
+                </a>
                 <span className="text-xs text-navy-foreground/50"> (Ghana)</span>
-                <br />
-                <a href="tel:+447990453547" className="hover:text-accent">+44 7990 453547</a>
-                <span className="text-xs text-navy-foreground/50"> (UK)</span>
               </span>
             </li>
             <li className="flex gap-3">
@@ -103,7 +117,10 @@ export function Footer() {
               form.reset();
             }}
           >
-            <label htmlFor="newsletter" className="text-xs font-semibold tracking-wide text-navy-foreground">
+            <label
+              htmlFor="newsletter"
+              className="text-xs font-semibold tracking-wide text-navy-foreground"
+            >
               Newsletter
             </label>
             <div className="mt-2 flex gap-2">
@@ -122,7 +139,7 @@ export function Footer() {
         </div>
       </div>
 
-      <div className="border-t border-white/10 bg-white/[0.03]">
+      <div className="border-t border-white/10 bg-white/3">
         <div className="container-page flex flex-col items-center justify-between gap-3 py-8 text-center sm:flex-row sm:text-left">
           <p className="text-2xl font-extrabold tracking-tight text-navy-foreground sm:text-3xl">
             LET'S TALK LOGISTICS
@@ -138,7 +155,7 @@ export function Footer() {
 
       <div className="border-t border-white/10">
         <div className="container-page flex flex-col gap-2 py-6 text-xs text-navy-foreground/55 sm:flex-row sm:items-center sm:justify-between">
-          <p>© {new Date().getFullYear()} Africlyde Trading & Logistics. All rights reserved.</p>
+          <p>© {new Date().getFullYear()} AfClyde Logistics and Trading. All rights reserved.</p>
           <p>Freight forwarding · Customs brokerage · Warehousing · Supply chain</p>
         </div>
       </div>

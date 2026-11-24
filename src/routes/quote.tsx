@@ -20,13 +20,13 @@ import { services } from "@/lib/site-data";
 export const Route = createFileRoute("/quote")({
   head: () => ({
     meta: [
-      { title: "Request a Quote | Africlyde Trading & Logistics" },
+      { title: "Request a Quote | AfClyde Logistics and Trading" },
       {
         name: "description",
         content:
-          "Request a freight quote from Africlyde Trading & Logistics. Share your origin, destination, cargo and timeline — indicative pricing within four business hours.",
+          "Request a freight quote from AfClyde Logistics and Trading. Share your origin, destination, cargo and timeline — indicative pricing within four business hours.",
       },
-      { property: "og:title", content: "Request a Freight Quote | Africlyde Trading & Logistics" },
+      { property: "og:title", content: "Request a Freight Quote | AfClyde Logistics and Trading" },
       { property: "og:description", content: "Indicative pricing in four hours, firm quotation within 24 hours." },
       { property: "og:url", content: "/quote" },
     ],

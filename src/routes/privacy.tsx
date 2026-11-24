@@ -4,13 +4,13 @@ import { PageHero } from "@/components/site/Blocks";
 export const Route = createFileRoute("/privacy")({
   head: () => ({
     meta: [
-      { title: "Privacy Policy | Africlyde Trading & Logistics" },
+      { title: "Privacy Policy | AfClyde Logistics and Trading" },
       {
         name: "description",
         content:
-          "How Africlyde Trading & Logistics collects, uses, stores and protects personal data submitted through quotes, tracking and enquiry forms.",
+          "How AfClyde Logistics and Trading collects, uses, stores and protects personal data submitted through quotes, tracking and enquiry forms.",
       },
-      { property: "og:title", content: "Privacy Policy | Africlyde Trading & Logistics" },
+      { property: "og:title", content: "Privacy Policy | AfClyde Logistics and Trading" },
       { property: "og:description", content: "Our approach to personal data, retention and your rights." },
       { property: "og:url", content: "/privacy" },
     ],
@@ -22,7 +22,7 @@ export const Route = createFileRoute("/privacy")({
 const sections = [
   {
     title: "Who we are",
-    body: "This page is maintained by Africlyde Trading & Logistics to explain how we handle personal information submitted through this website. It describes our current practices and is not an independent certification or audit result.",
+    body: "This page is maintained by AfClyde Logistics and Trading to explain how we handle personal information submitted through this website. It describes our current practices and is not an independent certification or audit result.",
   },
   {
     title: "Information we collect",
@@ -54,7 +54,7 @@ const sections = [
   },
   {
     title: "Contact",
-    body: "Questions about this policy can be sent to privacy@africlyde.com or to Africlyde Trading & Logistics, Airport City, Liberation Road, Accra, Ghana.",
+    body: "Questions about this policy can be sent to privacy@africlyde.com or to AfClyde Logistics and Trading, Paisley, Glasgow, Scotland.",
   },
 ];
 

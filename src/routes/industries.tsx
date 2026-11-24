@@ -7,13 +7,13 @@ import { industries } from "@/lib/site-data";
 export const Route = createFileRoute("/industries")({
   head: () => ({
     meta: [
-      { title: "Industries We Serve | Africlyde Trading & Logistics" },
+      { title: "Industries We Serve | AfClyde Logistics and Trading" },
       {
         name: "description",
         content:
           "Specialist logistics for agriculture, healthcare, retail, NGOs, e-commerce and FMCG across Africa.",
       },
-      { property: "og:title", content: "Industries We Serve | Africlyde Trading & Logistics" },
+      { property: "og:title", content: "Industries We Serve | AfClyde Logistics and Trading" },
       { property: "og:description", content: "Sector-specific logistics expertise across key African industries." },
       { property: "og:url", content: "/industries" },
     ],
